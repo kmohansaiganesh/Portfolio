@@ -225,9 +225,9 @@ const projects = [
       },
     ],
     image: stocksearch,
-    source_code_link: "https://github.com/monateja9999/stock_trek",
-    live_demo_link: "https://myclient6853863452.wl.r.appspot.com/",
-    youtube_link: "https://youtu.be/0IYM2VKoPzM",
+    source_code_link: "https://github.com/mohansaiganesh/stock_trek",
+    live_demo_link: "",
+    youtube_link: "https://youtu.be/e1JHsNx1AUU",
   },
   {
     name: "X-Change VIT",
@@ -257,7 +257,7 @@ const projects = [
 
     ],
     image: xchange,
-    source_code_link: "https://github.com/monateja9999/x_change_vit",
+    source_code_link: "https://github.com/mohansaiganesh/x_change_vit",
   },
   {
     name: "Contextual Matching",
@@ -278,7 +278,7 @@ const projects = [
       },
     ],
     image: contextualmatching,
-    source_code_link: "https://github.com/monateja9999/contextual_matching",
+    source_code_link: "https://github.com/mohansaiganesh/contextual_matching",
   },
 ];
 

@@ -17,32 +17,20 @@ const ProjectCard = ({
   live_demo_link,
   youtube_link,
 }) => {
-  const handleMouseMove = (e, cardRef) => {
-    const rect = cardRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
-
-    cardRef.current.style.transform = `rotateY(${x / 15}deg) rotateX(${-y / 15}deg)`;
-  };
-
-  const handleMouseLeave = (cardRef) => {
-    cardRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
-  };
-
   const cardRef = React.useRef();
 
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        whileHover={{ scale: 1.1 }} // Scale up on hover
-        whileTap={{ scale: 0.95 }} // Scale down on tap/click
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      whileHover={{ scale: 1.1 }} // Scale up on hover
+      whileFocus={{ scale: 1 }} // Reset scaling when focusing
+      transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth transition
     >
       <div
         ref={cardRef}
-        // onMouseMove={(e) => handleMouseMove(e, cardRef)}
-        // onMouseLeave={() => handleMouseLeave(cardRef)}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full transition-transform duration-300"
       >
-      <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt="project_image"
