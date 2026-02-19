@@ -32,7 +32,7 @@ import contextualmatching from "./contextualmatching.png";
 
 import youtube from "./youtube.png";
 import profilepicture from "./profile_picture.png";
-import myresume from "./Mohan-Sai-Ganesh-Kanna-Resume.pdf";
+import myresume from "./Mohan_Sai_Ganesh_Kanna_Resume.pdf";
 
 export {
   logo,
